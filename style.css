@@ -1,15 +1,21 @@
-*{
+
+	*{
   text-align: center;
   margin: 0px;
   padding: 0px;
   font-family: 'Roboto Slab', serif;
   z-index: 1;
-  transition: 0.4s;
-  text-size: 15px;
+  transition: 0s;
+  font-size: 15px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+}
+
+input
+{
+  border-radius: 5px;
 }
 
 ul li
@@ -83,7 +89,7 @@ nav
   -moz-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid rgba(0,0,0,0.1);
-  transition: 0.2s;
+  transition: 0s;
   box-shadow: 0px 6px grey;
 }
 
@@ -103,6 +109,7 @@ img.picAMe
   height: 100px;
   width: 100px;
   margin: 0px auto;
+  display: none;
 }
 
 img.picAMe:hover
@@ -114,6 +121,18 @@ img:hover
 {
   border: 3px skyblue 2px;
 }
+
+.right h4
+{
+border-bottom: 2px solid black;
+display: inline-block;
+padding: 3px 10px;
+width: auto;
+margin-bottom: 10px;
+border-radius: 500px;
+
+}
+
 
 .main-content:after
 {
@@ -131,6 +150,58 @@ hr
 {
   margin-top: 10px;
 }
+
+div.contact
+{
+  background: rgba(205,220,205,0.5);
+  margin: 0px 3px;
+  margin-top: 5px;
+  border-left: 1px solid black;
+  border-radius: 0px;
+}
+
+div.cntDetails
+{
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-top: 5px auto;
+  grid-gap: 5px;
+  margin: 15px 0px 0px 0px;
+}
+
+div.cntDetails>span
+{
+  padding: 0px;
+  margin: 0px
+  font-weight: 300;
+}
+
+div.contact textarea
+{
+  width: 90%;
+  height: 90%;
+  border-radius: 5px;
+  resize: none;
+}
+
+div.contact button
+{
+  margin: 3px auto;
+  border-radius: 5px;
+  padding: 5px;
+  background: #333;
+  color: white;
+  outline: none;
+}
+
+
+div.contact button:active
+{
+  background: white;
+  color: black;
+  transform: scale(0.7);
+}
+
 
 footer
 {
@@ -204,6 +275,7 @@ footer a:focus
   .content
   {
     margin: 5px 0px;
+    padding: 21px 5px;
   }
   
   .middle
@@ -221,7 +293,7 @@ footer a:focus
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: 10px;
+    top: 2px;
     border-radius: 8px;
   }
   
@@ -235,11 +307,20 @@ footer a:focus
     display: block;
     padding: 10px;
   }
-
+  
+  h1
+  {
+    font-size: xx-large;
+  }
+  
+  h3
+  {
+    font-size: large;
+  }
   
 } 
 
-
+/* For Desktop and larger screen */
 @media screen and (min-width: 600px)
 {
   .nav-items
@@ -251,29 +332,83 @@ footer a:focus
   {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin: 0px;
-  
+    justify-content: center;
   }
   
   .main-content .left {
     width: 10%;
+    padding: 10px
   }
   
   .main-content .middle {
     width: 68%;
+    padding: 2px;
+    transform: translateY(-5px);
+    font-size: 14px;
   }
   
   .main-content .right {
     width: 20%;
+   /* height: 300px;*/
+   padding: 10px;
   }
   
+  .content
+  {
+    /* font-size: 20px; */
+    margin: 0px;
+    color: black;
+    margin-top: 5px;
+  }
+
+  .middle:first-child
+  {
+    margin-top: 0px;
+  }
+
+  .content>div
+  {
+    font-size: 20px;
+    font-weight: 200;
+  }
+
+  h3
+  {
+    font-size: x-large;
+  }
+
+  h1
+  {
+    font-size: xx-large;
+  }
   .header
     {
       background: linear-gradient(90deg, #FF5151, #FFFFFF, #FFFFFF, #04DD14)
     }
+    
+  .contact
+  {
+    padding: 20px auto;
+    
+  }
+  
+  .cntDetails
+  {
+    grid-template-columns: 100px 100px;
+    width: 40%;
+    justify-content: center;
+    justify-items: center;
+    position: relative;
+   /* transform: translateX(50%);*/
+   margin: 5px auto;
+   border: 0px dotted black;
+   left: 28%;
+   
+  }
+  
+  .cntDetails span
+  {
+   border: 0px dashed black;
+   font-size: 20px;
+  }
 }
-
-
-
-

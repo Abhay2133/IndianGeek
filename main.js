@@ -1,4 +1,5 @@
-console.log('started')
+    
+    	console.log('started')
 //alert(screen.width)
 window.onload = ()=>
 {
@@ -45,8 +46,4 @@ const tHamBtn = (cmd) =>
       bar[2].style.transform = 'translateY(0px) rotate(0deg)';
   }
 }
-
-
-
-
-
+   

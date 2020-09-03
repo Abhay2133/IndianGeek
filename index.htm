@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <head>
-    <link rel="stylesheet" href="style.css">
+ <link rel="stylesheet" href="style.css"> 
+<!--  <link rel="stylesheet" href="style.css"> -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
     <title>
       WebLayout (Simple)
@@ -27,13 +28,14 @@
           <hr class="bar"/> 
         </span>
       </div>
+      
       <div class="nav-items">
       <a href="#">Home</a>
       <a href="#">Services</a>
       <a href="#">Products</a>
       <a href="#">Forums</a>
-      <a href="#">About</a>
-      <a href="#">Contact us</a>
+      <a href="#r">About</a>
+      <a href="#cntct">Contact us</a>
       </div>
     </nav>
     
@@ -67,6 +69,8 @@
             </div>
       </div>
       
+      
+      <a id="r"></a>
       <div class="right">
         <div>
           <img class="picAMe" src="./static/about.jpg" alt="About Me">
@@ -81,6 +85,33 @@
       
     </div>
     
+    
+    <a id="cntct">
+    <div class="contact">
+      <h3> Contact me </h3>
+      
+      <center>
+      <div class="cntDetails">
+        
+        <span>Email : </span>
+        <span><input placeholder="example@email.com">
+        </span>
+        
+        <span> Message : </span>
+        <span><textarea placeholder="Type your Message here..."></textarea>
+        </span>
+        
+        
+        </div>
+        </center>
+        <button>Submit</button>
+        
+      
+    </div>
+    
+    </a>
+    
+    
     <footer>
       © Copyright. All Rights are Reserved.
       <br>
@@ -88,9 +119,8 @@
     </footer>
     
     
-    
-    <script src='./main.js'>
-    </script>
+<script src='main.js'></<script></script>>
+ 
   
   </body>
   
