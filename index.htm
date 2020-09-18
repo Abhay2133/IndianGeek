@@ -1,127 +1,141 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<HTML>
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
   
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <head>
- <link rel="stylesheet" href="style.css"> 
-<!--  <link rel="stylesheet" href="style.css"> -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap" rel="stylesheet">
-    <title>
-      WebLayout (Simple)
-    </title>
-  </head>
-  
-  <body>
-    
-    <div class="header">
-    <h1> Indian Geeks </> </h1>
-    </div>
-    
-    <nav>
-      <div class="ham-btn" onclick="toggleNI()">
-        <hr class="bar">
-        <span>
-          <hr class="bar">
-          <hr class="bar"/> 
-        </span>
-      </div>
-      
-      <div class="nav-items">
-      <a href="#">Home</a>
-      <a href="#">Services</a>
-      <a href="#">Products</a>
-      <a href="#">Forums</a>
-      <a href="#r">About</a>
-      <a href="#cntct">Contact us</a>
-      </div>
-    </nav>
-    
-    
-    <div class="main-content">
-      
-      <div class="left">
-        <div class="ml"><!-- ml == more links -->
-          <ul>
-            <li><a href="#">More Links</a></li>
-          </ul>
+        <div class="main-heading">
+            Abhay
         </div>
-      </div>
-      
-     <div class="middle">
-      <div class="content">
-        <h3>Weather API</h3>
         
-        <div>
-          This is a simple weather api giving a json and then using it in our webpage...So simple.
-        </div>
-          
-      </div>
-      
-      <div class="content">
-            <h3>Dictionary API</h3>
+        <nav>
+            <div id="menu-button">
+                <hr>
+                <hr>
+                <hr>
+            </div>          
+            <ul id="menu-list">
+                <li> Home </li>
+                <li> Profile </li>
+                <li> Services </li>
+                <li> Features </li>
+                <li> About </li>
+                <li> Contant us </li>
+            </ul>
             
-            <div>
-              Enter a word and get its meaning with its definition, using dictionary api easily.
+        </nav>
+        
+        <div id="content">
+            <div id="left">
+                <div class="heading">
+                    More Links
+                </div>
             </div>
+   
+   <!-- Middle Start.     -->         
+            
+<div id="middle">
+               
+    <div class="card">
+        <div class="card-heading"> Weather API </div>
+        <div class="card-text">  I created an Weather app with simple Fetch metgod and accuweather api...  
+        </div>
+    </div>
+    
+    <div class="card">
+        <div class="card-heading"> Calculator </div>
+        <div class="card-text">  A simple calculator in a webpage, created using simole vanella Javascript... 
+        </div>
+    </div>
+                   
+</div>
+            
+    <!--         MIDDLE EMD.     -->
+            <div id="right">
+                <div id="about-heading">
+                    About Me
+                </div>
+                <div id="about">
+                    Hi, my name is Abhay and I am the owner of this website and feel free to comment and share my stuffs...
+                </div>
             </div>
-      </div>
-      
-      
-      <a id="r"></a>
-      <div class="right">
-        <div>
-          <img class="picAMe" src="./static/about.jpg" alt="About Me">
         </div>
-        <h4>About Me</h4>
-        <div>
-          My name is Abhay Bisht and I am the owner if this website and this website is for unseen tips and tricks of web developments that many poeple dont notices but these are really cool...
-        </div>
-      </div>
-      
-     </div>
-      
+  
+  <div id="user-comment">
+  
+  <div class="heading">
+      Comments
+  </div>
+  
+    <div class="uc">
+       <div class="dp"></div>
+       <div class="user-name">Abhay</div>
+       <div class="user-comment">
+           This is Awesome....
+       </div>
+    </div>
+    
+    <div class="uc">
+       <div class="dp"></div>
+       <div class="user-name">Abhay</div>
+       <div class="user-comment">
+           This is Awesome....
+       </div>
     </div>
     
     
-    <a id="cntct">
-    <div class="contact">
-      <h3> Contact me </h3>
-      
-      <center>
-      <div class="cntDetails">
         
-        <span>Email : </span>
-        <span><input placeholder="example@email.com">
-        </span>
-        
-        <span> Message : </span>
-        <span><textarea placeholder="Type your Message here..."></textarea>
-        </span>
-        
-        
-        </div>
-        </center>
-        <button>Submit</button>
-        
-      
-    </div>
-    
-    </a>
-    
-    
-    <footer>
-      © Copyright. All Rights are Reserved.
-      <br>
-      <a href="#"> Contact US</a>
-    </footer>
-    
-    
-<script src='main.js'></<script></script>>
- 
+       
+   </div>
   
-  </body>
+  <div id="comment">
+  <center>
+      <div id="comment-heading">
+          Enter Your Comment
+      </div>
+      
+      <form id="feedback">
+      <table>
+      <tr>
+  <td>  Email :  </td>
+  <td>
+  <input type="email" name="email" id="email" placeholder = "Email">
+    </td>
+      </tr>
+     <tr>     
+     <td>Comment : </td>
+     <td>
+     <textarea name="text" id="comment-text" placeholder="Enter ur comment Here..."></textarea>
+     </td>
+     </tr>
+     </table>
+      </form>
+      
+      <button id="submit"> Submit </button>
+      
+  </center>
+      
+  </div>
   
-</HTML>
+  
+  <footer>
+      @Copyright. All Rights are Reserved
+      <div>2018 - 2020</div>
+  </footer>
+  
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+</html>
