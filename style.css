@@ -12,6 +12,7 @@
     font-family: 'Roboto Slab', serif;
     font-size: var(--text);
     outline: none;
+    user-select: none;
 }
 
 div.main-heading

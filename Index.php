@@ -106,21 +106,23 @@
           Enter Your Comment
       </div>
       
-      <form id="feedback" method="post" action="./index.htm">
+      <form id="feedback" method="post" action=" <?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
       <table>
       <tr>
   <td>  Email :  </td>
   <td>
-  <input type="email" name="email" id="email" placeholder = "Email">
+  <input type="email" name="email" id="email" placeholder = "Email" required>
     </td>
       </tr>
      <tr>     
      <td>Comment : </td>
      <td>
-     <textarea name="text" id="comment-text" placeholder="Enter ur comment Here..."></textarea>
+     <textarea name="text" id="comment-text" placeholder="Enter ur comment Here..."  required></textarea>
      </td>
      </tr>
      </table>
+   <!--  <button class="hidden" id="form-submit">Submit</button>
+     </form> -->
       
       <button id="submit" onclick="submit()"> Submit </button>
       </form>
