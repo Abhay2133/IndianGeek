@@ -27,12 +27,12 @@
                 <hr>
             </div>          
             <ul id="menu-list">
-                <li> Home </li>
-                <li> Profile </li>
-                <li> Services </li>
-                <li> Features </li>
-                <li> About </li>
-                <li> Contant us </li>
+                <a href="#"><li> Home </li></a>
+                <a href="#"><li> Profile </li></a>
+                <a href="#"><li> Services </li></a>
+                <a href="#"><li> Features </li></a>
+                <a href="#"><li> About </li></a>
+                <a href="#"><li> Contant us </li></a>
             </ul>
             
         </nav>
@@ -56,13 +56,13 @@
     
     <div class="card">
         <div class="card-heading"> Calculator </div>
-        <div class="card-text">  A simple calculator in a webpage, created using simole vanella Javascript... 
+        <div class="card-text">  A simple calculator in a webpage, created using simple vanella Javascript... 
         </div>
     </div>
-                   
+       
 </div>
             
-    <!--         MIDDLE EMD.     -->
+    <!--         MIDDLE END.     -->
             <div id="right">
                 <div id="about-heading">
                     About Me
@@ -114,20 +114,22 @@
       <form id="feedback" method="post" action="./index.htm">
       <table>
       <tr>
-  <td>  Email :  </td>
-  <td>
-  <input type="email" name="email" id="email" placeholder = "Email">
-    </td>
+            <td>
+             Email :  
+            </td>
+              <td>
+                <input type="email" name="email" id="email" placeholder = "Email" required>
+              </td>
       </tr>
      <tr>     
      <td>Comment : </td>
      <td>
-     <textarea name="text" id="comment-text" placeholder="Enter ur comment Here..."></textarea>
+     <textarea name="text" id="comment-text" placeholder="Enter ur comment Here..." required></textarea>
      </td>
      </tr>
      </table>
       
-      <button id="submit" onclick="submit()"> Submit </button>
+      <button id="submit"> Submit </button>
       </form>
   </center>
       
